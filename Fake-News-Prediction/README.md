@@ -71,7 +71,22 @@ The project uses a labeled news dataset (`train.csv`) consisting of **20,800 row
 | `label` | `1` = Fake, `0` = Real |
 | `content` | Combined `author` + `title` + `text`, created during preprocessing |
 
-> 📌 **Note:** The dataset (`train.csv`) is not included in this repository due to size/licensing. You can source a similar dataset from [Kaggle's Fake News dataset](https://www.kaggle.com/c/fake-news/data).
+> 📌 **Note:** The dataset (`train.csv`) is not included in this repository due to size/licensing.
+
+### 📥 Where to Get the Dataset
+
+This project is built to work with the **Fake News dataset** hosted on Kaggle:
+
+🔗 **[Kaggle — Fake News Dataset](https://www.kaggle.com/c/fake-news/data)**
+
+To set it up:
+
+1. Visit the Kaggle link above and sign in (a free Kaggle account is required).
+2. Download `train.csv` from the **Data** tab of the competition page.
+3. Place the downloaded `train.csv` file in the root directory of this project — the same folder as `Fake_News_Prediction.ipynb`.
+4. You're all set — the notebook will load the file directly from there.
+
+> ⚠️ If Kaggle's dataset structure changes, you can substitute any dataset with the same five columns (`id`, `title`, `author`, `text`, `label`) — the preprocessing pipeline is built around that schema.
 
 ---
 
